@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Learn Words</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <nav class="navbar">
+   <div class="logo">SignEase</div>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="letters.html">Learn Letters</a></li>
+    <li> <a href="learn-words.html">Learn Words</a></li>
+    <li><a href="translator.html">Live Translator</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</nav>
+
+
+<div class="letters-container">
+    <h1>Learn ASL Words</h1>
+
+    <div class="letters-grid">
+        <div class="letter" onclick="openWord('no')">No</div>
+        <div class="letter" onclick="openWord('yes')">Yes</div>
+        <div class="letter" onclick="openWord('mother')">Mother</div>
+        <div class="letter" onclick="openWord('father')">Father</div>
+        <div class="letter" onclick="openWord('thankyou')">Thank You</div>
+        <div class="letter" onclick="openWord('iloveyou')">I Love You</div>
+        <div class="letter" onclick="openWord('hello')">Hello</div>
+        <div class="letter" onclick="openWord('please')">Please</div>
+    </div>
+</div>
+
+<script>
+function openWord(word) {
+    window.location.href = `word.html?word=${word}`;
+}
+</script>
+
+
+<script>
+function openWord(word) {
+  window.location.href = `word.html?word=${word}`;
+}
+</script>
+
+<script>
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.getElementById("navLinks");
+
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+</script>
+
+
+</body>
+</html>

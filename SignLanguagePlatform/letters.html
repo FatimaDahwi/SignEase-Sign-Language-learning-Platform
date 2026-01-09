@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Letters</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <nav class="navbar">
+   <div class="logo">SignEase</div>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="letters.html">Learn Letters</a></li>
+    <li> <a href="learn-words.html">Learn Words</a></li>
+    <li><a href="translator.html">Live Translator</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</nav>
+
+
+<div class="letters-container">
+    <h1>Learn ASL Letters</h1>
+
+    <div class="letters-grid">
+        <div class="letter" onclick="openLetter('A')">A</div>
+        <div class="letter" onclick="openLetter('B')">B</div>
+        <div class="letter" onclick="openLetter('C')">C</div>
+        <div class="letter" onclick="openLetter('D')">D</div>
+        <div class="letter" onclick="openLetter('E')">E</div>
+        <div class="letter" onclick="openLetter('F')">F</div>
+        <div class="letter" onclick="openLetter('G')">G</div>
+        <div class="letter" onclick="openLetter('H')">H</div>
+        <div class="letter" onclick="openLetter('I')">I</div>
+        <div class="letter" onclick="openLetter('J')">J</div>
+        <div class="letter" onclick="openLetter('K')">K</div>
+        <div class="letter" onclick="openLetter('L')">L</div>
+        <div class="letter" onclick="openLetter('M')">M</div>
+        <div class="letter" onclick="openLetter('N')">N</div>
+        <div class="letter" onclick="openLetter('O')">O</div>
+        <div class="letter" onclick="openLetter('P')">P</div>
+        <div class="letter" onclick="openLetter('Q')">Q</div>
+        <div class="letter" onclick="openLetter('R')">R</div>
+        <div class="letter" onclick="openLetter('S')">S</div>
+        <div class="letter" onclick="openLetter('T')">T</div>
+        <div class="letter" onclick="openLetter('U')">U</div>
+        <div class="letter" onclick="openLetter('V')">V</div>
+        <div class="letter" onclick="openLetter('W')">W</div>
+        <div class="letter" onclick="openLetter('X')">X</div>
+        <div class="letter" onclick="openLetter('Y')">Y</div>
+        <div class="letter" onclick="openLetter('Z')">Z</div>
+    </div>
+</div>
+
+<script>
+    function openLetter(letter) {
+        window.location.href = `letter.html?letter=${letter}`;
+    }
+</script>
+
+<script>
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.getElementById("navLinks");
+
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+</script>
+
+
+</body>
+</html>

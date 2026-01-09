@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Project Info</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+   <nav class="navbar">
+   <div class="logo">SignEase</div>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="letters.html">Learn Letters</a></li>
+    <li> <a href="learn-words.html">Learn Words</a></li>
+    <li><a href="translator.html">Live Translator</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</nav>
+
+<div class="info-container">
+  <h1>About This Project</h1>
+
+  <section>
+    <h2>🎯 Purpose</h2>
+    <p>
+      This project aims to help users learn and practice American Sign Language (ASL)
+      using real-time computer vision and machine learning techniques.
+      It focuses on recognizing hand gestures for letters and words through a webcam
+      and translating them into readable text.
+    </p>
+  </section>
+
+  <section>
+    <h2>🧠 Technologies Used</h2>
+    <ul>
+      <li>Python & Flask (Backend API)</li>
+      <li>TensorFlow / Keras (Deep Learning Models)</li>
+      <li>MediaPipe (Hand & Holistic Landmark Detection)</li>
+      <li>HTML, CSS, JavaScript (Frontend)</li>
+      <li>OpenCV (Image & Video Processing)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>✨ Features</h2>
+    <ul>
+      <li>Learn ASL letters with visual examples</li>
+      <li>Real-time letter recognition using webcam</li>
+      <li>Practice mode with accuracy score</li>
+      <li>Word recognition using video input</li>
+      <li>Live ASL translator for letters</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>📚 Project Type</h2>
+    <p>
+      This project was developed as an academic machine learning project
+      focusing on gesture recognition and human-computer interaction.
+    </p>
+  </section>
+</div>
+
+<script>
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.getElementById("navLinks");
+
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+</script>
+
+
+</body>
+</html>

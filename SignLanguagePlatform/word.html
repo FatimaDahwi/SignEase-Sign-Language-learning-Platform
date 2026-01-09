@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Practice Word</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <nav class="navbar">
+   <div class="logo">SignEase</div>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="letters.html">Learn Letters</a></li>
+    <li> <a href="learn-words.html">Learn Words</a></li>
+    <li><a href="translator.html">Live Translator</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</nav>
+
+
+
+<div class="container">
+  <h1 id="wordTitle"></h1>
+
+  <video id="preview" controls style="display:none;"></video>
+
+  <input type="file" accept="video/*" id="videoInput">
+
+  <button id="predictBtn">Predict</button>
+
+  <p id="resultText"></p>
+
+</div>
+
+
+<script src="word.js"></script>
+<script>
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.getElementById("navLinks");
+
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+</script>
+
+</body>
+</html>

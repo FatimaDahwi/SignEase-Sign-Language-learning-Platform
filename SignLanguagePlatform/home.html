@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - ASL Platform</title>
+    <link rel="stylesheet" href="style.css">
+    
+    
+</head>
+<body>
+    <nav class="navbar">
+  <div class="logo">SignEase</div>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="letters.html">Learn Letters</a></li>
+    <li> <a href="learn-words.html">Learn Words</a></li>
+    <li><a href="translator.html">Live Translator</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</nav>
+
+
+
+<div class="home-container">
+
+    <h1>Choose an option</h1>
+
+    <div class="options">
+
+        <div class="option-card" onclick="go('letters.html')">
+            <h2>Learn Letters</h2>
+            <p>Practice ASL letters with real-time feedback</p>
+        </div>
+
+        <div class="option-card" onclick="go('learn-words.html')">
+            <h2>Learn Words</h2>
+            <p>Learn ASL words using video-based practice</p>
+        </div>
+
+        <div class="option-card" onclick="go('translator.html')">
+            <h2>Live Translator</h2>
+            <p>Translate sign language to text</p>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    function go(page) {
+        window.location.href = page;
+    }
+</script>
+
+<script>
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.getElementById("navLinks");
+
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Learn Letter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+   <div class="logo">SignEase</div>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="letters.html">Learn Letters</a></li>
+    <li> <a href="learn-words.html">Learn Words</a></li>
+    <li><a href="translator.html">Live Translator</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</nav>
+
+
+<div class="container">
+  <h1 id="letterTitle"></h1>
+
+  <!-- Static letter image -->
+  <img id="letterImage" alt="ASL Letter Image" />
+
+  <!-- Start practice -->
+  <button class="start-btn" id="startBtn">Start Practice</button>
+
+  <!-- Practice Section -->
+ <div id="practiceSection" class="practice hidden">
+  <h2>Practice the Letter</h2>
+
+  <div class="camera-box">
+    <video id="camera" autoplay playsinline></video>
+  </div>
+
+  <canvas id="canvas" hidden></canvas>
+
+  <p id="predictionText"></p>
+  <p id="scoreText"></p>
+</div>
+
+</div>
+
+
+<script src="letter.js"></script>
+<script>
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.getElementById("navLinks");
+
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+</script>
+
+</body>
+</html>
